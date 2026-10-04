@@ -1,0 +1,121 @@
+{
+  "best_model": "logistic_regression",
+  "best_model_display": "Logistic Regression",
+  "selection_metric": "5-fold cross-validation ROC-AUC",
+  "best_cv_roc_auc": 0.862,
+  "models": {
+    "logistic_regression": {
+      "display_name": "Logistic Regression",
+      "cv_roc_auc": 0.862,
+      "cv_f1": 0.676,
+      "cv_recall": 0.8069,
+      "cv_precision": 0.582,
+      "best_threshold": 0.56,
+      "accuracy": 0.7921,
+      "precision": 0.6224,
+      "recall": 0.769,
+      "f1_score": 0.688,
+      "roc_auc": 0.8685,
+      "cm": {
+        "TN": 793,
+        "FP": 196,
+        "FN": 97,
+        "TP": 323
+      },
+      "train_time_sec": 7.124
+    },
+    "decision_tree": {
+      "display_name": "Decision Tree",
+      "cv_roc_auc": 0.8356,
+      "cv_f1": 0.6602,
+      "cv_recall": 0.8075,
+      "cv_precision": 0.5585,
+      "best_threshold": 0.54,
+      "accuracy": 0.7736,
+      "precision": 0.5888,
+      "recall": 0.7976,
+      "f1_score": 0.6775,
+      "roc_auc": 0.8528,
+      "cm": {
+        "TN": 755,
+        "FP": 234,
+        "FN": 85,
+        "TP": 335
+      },
+      "train_time_sec": 2.434
+    },
+    "random_forest": {
+      "display_name": "Random Forest",
+      "cv_roc_auc": 0.8573,
+      "cv_f1": 0.6735,
+      "cv_recall": 0.7855,
+      "cv_precision": 0.5899,
+      "best_threshold": 0.52,
+      "accuracy": 0.7786,
+      "precision": 0.6027,
+      "recall": 0.7548,
+      "f1_score": 0.6702,
+      "roc_auc": 0.857,
+      "cm": {
+        "TN": 780,
+        "FP": 209,
+        "FN": 103,
+        "TP": 317
+      },
+      "train_time_sec": 5.043
+    },
+    "gradient_boosting": {
+      "display_name": "Gradient Boosting",
+      "cv_roc_auc": 0.8599,
+      "cv_f1": 0.6489,
+      "cv_recall": 0.6127,
+      "cv_precision": 0.6908,
+      "best_threshold": 0.37,
+      "accuracy": 0.7899,
+      "precision": 0.6255,
+      "recall": 0.7357,
+      "f1_score": 0.6761,
+      "roc_auc": 0.8623,
+      "cm": {
+        "TN": 804,
+        "FP": 185,
+        "FN": 111,
+        "TP": 309
+      },
+      "train_time_sec": 9.319
+    }
+  },
+  "test_size": 0.2,
+  "random_state": 42,
+  "cv_folds": 5,
+  "best_threshold": 0.56,
+  "feature_names": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "MonthlyCharges",
+    "TotalCharges",
+    "tenure_cohort",
+    "num_security_services",
+    "num_streaming_services",
+    "total_active_services",
+    "is_automatic_payment",
+    "charges_per_active_service",
+    "monthly_to_total_ratio",
+    "is_senior_living_alone"
+  ]
+}
